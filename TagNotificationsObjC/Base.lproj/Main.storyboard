@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oT6-nU-Ej3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tag Push Notifications-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-B6-LhB">
+                                <rect key="frame" x="16" y="0.0" width="288" height="361"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="HsX-fj-euB"/>
+                                    <constraint firstAttribute="height" constant="361" id="yz2-q4-DtF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Broadcast notification">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">To receive a broadcast notification: right-click the PushAdapter folder in the Studio, select the "sendBroadcastNotification"
+procedure and provide the notification text in quotation marks, for example: "test notification".
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Tag notifications">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">To receive notifications for a specific tag: first subscribe to a tag below, right-click the PushAdapter folder in the Studio, select the "sendTagNotification"
+procedure and provide the notification text and tag name in quotation marks, for example: "test notification","sample-tag1" or to notify multiple tags:  
+"test notification","sample-tag1,sample-tag2".</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Siz-zS-7of">
+                                <rect key="frame" x="163" y="368" width="148" height="29"/>
+                                <color key="backgroundColor" red="0.15085055484748108" green="0.43223418024450161" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="isSubscribed?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isSubscribed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Ls-4T-ekD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39W-5E-NIh">
+                                <rect key="frame" x="13" y="401" width="298" height="29"/>
+                                <color key="backgroundColor" red="0.15239917755169058" green="0.44210374321044255" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Subscribe sample-tag1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="subscribetag1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oSa-tz-ekI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnT-30-SNI">
+                                <rect key="frame" x="13" y="467" width="298" height="29"/>
+                                <color key="backgroundColor" red="0.14537541729475606" green="0.44576118981476753" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Unsubscribe sample-tag1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unsubscribetag1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Aa9-Vz-6sg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxg-8O-WNR">
+                                <rect key="frame" x="13" y="499" width="298" height="29"/>
+                                <color key="backgroundColor" red="0.15744282096332624" green="0.45972726474968356" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Unsubscribe sample-tag2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unsubscribetag2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1kV-XI-zhD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXi-ua-It4">
+                                <rect key="frame" x="13" y="368" width="148" height="29"/>
+                                <color key="backgroundColor" red="0.13330218514110118" green="0.42059182233895864" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="isPushSupported?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isPushSupported:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M03-I7-T3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM2-Wm-5RW">
+                                <rect key="frame" x="13" y="434" width="298" height="29"/>
+                                <color key="backgroundColor" red="0.15009607153045948" green="0.44642547769591329" blue="0.59160580839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Subscribe sample-tag2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="subscribetag2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fb4-HL-KDm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39W-5E-NIh" firstAttribute="top" secondItem="iXi-ua-It4" secondAttribute="bottom" constant="4" id="25V-ui-LsB"/>
+                            <constraint firstItem="39W-5E-NIh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="5cd-WI-1c5"/>
+                            <constraint firstItem="Siz-zS-7of" firstAttribute="leading" secondItem="iXi-ua-It4" secondAttribute="trailing" constant="2" id="E9k-Xk-rsz"/>
+                            <constraint firstItem="UWv-B6-LhB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I4x-9p-wUj"/>
+                            <constraint firstItem="UWv-B6-LhB" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="LsW-i9-x2y"/>
+                            <constraint firstItem="iXi-ua-It4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="NRl-UI-9An"/>
+                            <constraint firstItem="Siz-zS-7of" firstAttribute="top" secondItem="UWv-B6-LhB" secondAttribute="bottom" constant="7" id="T5k-ed-7JH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rxg-8O-WNR" secondAttribute="trailing" constant="-7" id="UJM-eH-eVQ"/>
+                            <constraint firstItem="qM2-Wm-5RW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="ULm-Y4-ZB8"/>
+                            <constraint firstItem="xnT-30-SNI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="WH6-4Q-iZZ"/>
+                            <constraint firstItem="xnT-30-SNI" firstAttribute="top" secondItem="qM2-Wm-5RW" secondAttribute="bottom" constant="4" id="WOY-V1-bYZ"/>
+                            <constraint firstItem="rxg-8O-WNR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="WuT-QU-xMy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qM2-Wm-5RW" secondAttribute="trailing" constant="-7" id="cvc-6B-wW4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="39W-5E-NIh" secondAttribute="trailing" constant="-7" id="kDu-f0-6Op"/>
+                            <constraint firstItem="UWv-B6-LhB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="lSK-65-Ua1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Siz-zS-7of" secondAttribute="trailing" constant="-7" id="lYS-CL-Ftk"/>
+                            <constraint firstItem="qM2-Wm-5RW" firstAttribute="top" secondItem="39W-5E-NIh" secondAttribute="bottom" constant="4" id="mSu-tJ-kfC"/>
+                            <constraint firstItem="rxg-8O-WNR" firstAttribute="top" secondItem="xnT-30-SNI" secondAttribute="bottom" constant="3" id="vtv-8r-LJa"/>
+                            <constraint firstItem="iXi-ua-It4" firstAttribute="width" secondItem="Siz-zS-7of" secondAttribute="width" id="wdr-7k-rNa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnT-30-SNI" secondAttribute="trailing" constant="-7" id="y55-y5-5mG"/>
+                            <constraint firstItem="iXi-ua-It4" firstAttribute="top" secondItem="UWv-B6-LhB" secondAttribute="bottom" constant="7" id="yz2-Mo-8ck"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tag Push Notifications" id="cMf-LC-dtt" userLabel="Tag Push Notifications"/>
+                    <connections>
+                        <outlet property="console" destination="UWv-B6-LhB" id="87u-X6-kaD"/>
+                        <outlet property="subscribeTag1" destination="39W-5E-NIh" id="yLh-hW-QOq"/>
+                        <outlet property="subscribeTag2" destination="qM2-Wm-5RW" id="S4F-PT-Oci"/>
+                        <outlet property="unsubscribeTag1" destination="xnT-30-SNI" id="U2j-fh-IDS"/>
+                        <outlet property="unsubscribeTag2" destination="rxg-8O-WNR" id="51C-Z0-i3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="47"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jv7-9u-umS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oT6-nU-Ej3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Aq-Xd-tIv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="IQ0-xE-RI4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHC-yH-E0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="47"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
