@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19983C381AF8D3C80005363F /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 19983C371AF8D3C80005363F /* WorklightAPI */; };
 		19983C391AF8D3E80005363F /* sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827B8BE01AF2273E0014E8BE /* sqlcipher.framework */; };
 		19983C3B1AF8D3E90005363F /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19983C3A1AF8D3E90005363F /* IBMMobileFirstPlatformFoundation.framework */; };
 		4836F878192DCA5900512A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4836F877192DCA5900512A5F /* Foundation.framework */; };
@@ -31,11 +30,11 @@
 		4836F932192DD3FE00512A5F /* MyUnsubscribeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836F92C192DD3FE00512A5F /* MyUnsubscribeListener.m */; };
 		4836F933192DD3FE00512A5F /* ReadyToSubscribeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 4836F92E192DD3FE00512A5F /* ReadyToSubscribeListener.m */; };
 		4836F955192DF4A600512A5F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4836F8AC192DCA8E00512A5F /* libc++.dylib */; };
-		827B8BDE1AF2242F0014E8BE /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 827B8BDC1AF2242F0014E8BE /* worklight.plist */; };
+		82B907D71B6678D900E48493 /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D51B6678D900E48493 /* worklight.plist */; };
+		82B907D81B6678D900E48493 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 82B907D61B6678D900E48493 /* WorklightAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19983C371AF8D3C80005363F /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
 		19983C3A1AF8D3E90005363F /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = WorklightAPI/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
 		4836F874192DCA5900512A5F /* TagNotificationsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagNotificationsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4836F877192DCA5900512A5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,8 +68,9 @@
 		4836F92E192DD3FE00512A5F /* ReadyToSubscribeListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadyToSubscribeListener.m; sourceTree = "<group>"; };
 		4836F934192DD9C500512A5F /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
 		4836F936192DD9F900512A5F /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
-		827B8BDC1AF2242F0014E8BE /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
 		827B8BE01AF2273E0014E8BE /* sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlcipher.framework; path = WorklightAPI/Frameworks/sqlcipher.framework; sourceTree = "<group>"; };
+		82B907D51B6678D900E48493 /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		82B907D61B6678D900E48493 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 		4836F86B192DCA5900512A5F = {
 			isa = PBXGroup;
 			children = (
-				19983C371AF8D3C80005363F /* WorklightAPI */,
-				827B8BDC1AF2242F0014E8BE /* worklight.plist */,
+				82B907D51B6678D900E48493 /* worklight.plist */,
+				82B907D61B6678D900E48493 /* WorklightAPI */,
 				4836F87D192DCA5900512A5F /* TagNotificationsObjC */,
 				4836F876192DCA5900512A5F /* Frameworks */,
 				4836F875192DCA5900512A5F /* Products */,
@@ -223,8 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				827B8BDE1AF2242F0014E8BE /* worklight.plist in Resources */,
-				19983C381AF8D3C80005363F /* WorklightAPI in Resources */,
+				82B907D71B6678D900E48493 /* worklight.plist in Resources */,
+				82B907D81B6678D900E48493 /* WorklightAPI in Resources */,
 				4836F890192DCA5900512A5F /* Images.xcassets in Resources */,
 				4836F882192DCA5900512A5F /* InfoPlist.strings in Resources */,
 				4836F88B192DCA5900512A5F /* Main.storyboard in Resources */,
