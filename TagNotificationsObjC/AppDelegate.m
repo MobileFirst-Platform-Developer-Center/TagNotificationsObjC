@@ -63,12 +63,12 @@
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     NSLog(@"Received Notification %@",userInfo.description);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NotificationReceived"
-                                                    message:userInfo.description
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Notification"
+                                                                   message: userInfo[@"aps"][@"alert"][@"body"]
+                                                                  delegate:nil
+                                                         cancelButtonTitle:@"OK"
+                                                         otherButtonTitles:nil];
+    [adapterResponseAlert show];
 }
 
 @end
