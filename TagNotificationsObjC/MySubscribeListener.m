@@ -18,17 +18,9 @@
 
 @implementation MySubscribeListener 
 
-- (id)initWithController: (ViewController *) mainView{
-    if ( self = [super init] )
-    {
-        vc = mainView;
-    }
-    return self;
-}
-
 -(void) onSuccess:(WLResponse *)response{
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Subscribe  Success"
-                                                    message:@"Subscribed to Tag"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Subscribed successfully"
+                                                    message: nil
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
@@ -36,8 +28,8 @@
 }
 
 -(void)onFailure:(WLFailResponse *)response{
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Subscribe  Failure"
-                                                    message:@"Failed subscribing to Tag"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed to subscribe"
+                                                    message: nil
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];

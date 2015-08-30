@@ -18,17 +18,9 @@
 
 @implementation MyUnsubscribeListener
 
-- (id)initWithController: (ViewController *) mainView{
-    if ( self = [super init] )
-    {
-        vc = mainView;
-    }
-    return self;
-}
-
 -(void) onSuccess:(WLResponse *)response{
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unsubscribe  Success"
-                                                    message:@"Unsubscribed from Tag"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unsubscribed successfully"
+                                                    message: nil
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
@@ -36,8 +28,8 @@
 }
 
 -(void)onFailure:(WLFailResponse *)response{
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unsubscribe  Failure"
-                                                    message:@"Failed Unsubscribing from Tag"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed to unsubscribe"
+                                                    message: nil
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];

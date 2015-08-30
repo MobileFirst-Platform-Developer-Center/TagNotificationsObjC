@@ -28,7 +28,6 @@
 
 @implementation ViewController
 
-@synthesize console=_console;
 @synthesize subscribeTag1=_subscribeTag1;
 @synthesize subscribeTag2=_subscribeTag2;
 @synthesize unsubscribeTag1=_unsubscribeTag1;
@@ -40,13 +39,12 @@
     [super viewDidLoad];
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
 	appDelegate.appDelegateVC = self;
-	[[WLPush sharedInstance]init];
     self.subscribeTag1.enabled=false;
     self.subscribeTag2.enabled=false;
     self.unsubscribeTag1.enabled=false;
     self.unsubscribeTag2.enabled=false;
     
-    MyConnectionListener *connectListener = [[MyConnectionListener alloc] initWithController:self];
+    MyConnectionListener *connectListener = [[MyConnectionListener alloc] init];
     
     ReadyToSubscribeListener *readyToSubscribeListener = [[ReadyToSubscribeListener alloc] initWithController:self];
     
@@ -90,32 +88,28 @@
 
 - (IBAction)subscribetag1:(id)sender {
     
-    MySubscribeListener *mySubscribeListener = [[MySubscribeListener alloc] initWithController:self];
+    MySubscribeListener *mySubscribeListener = [[MySubscribeListener alloc] init];
     [[WLPush sharedInstance]subscribeTag:@"sample-tag1" :nil :mySubscribeListener];
     
 }
 - (IBAction)subscribetag2:(id)sender {
    
-    MySubscribeListener *mySubscribeListener = [[MySubscribeListener alloc] initWithController:self];
+    MySubscribeListener *mySubscribeListener = [[MySubscribeListener alloc] init];
     [[WLPush sharedInstance]subscribeTag:@"sample-tag2" :nil :mySubscribeListener];
 }
 
 
 - (IBAction)unsubscribetag1:(id)sender {
-    MyUnsubscribeListener *myUnsubscribelistener = [[MyUnsubscribeListener alloc]initWithController:self];
+    MyUnsubscribeListener *myUnsubscribelistener = [[MyUnsubscribeListener alloc]init];
     [[WLPush sharedInstance]unsubscribeTag:@"sample-tag1" :myUnsubscribelistener];
     
 }
 
 - (IBAction)unsubscribetag2:(id)sender {
-    MyUnsubscribeListener *myUnsubscribelistener = [[MyUnsubscribeListener alloc]initWithController:self];
+    MyUnsubscribeListener *myUnsubscribelistener = [[MyUnsubscribeListener alloc]init];
     [[WLPush sharedInstance]unsubscribeTag:@"sample-tag2" :myUnsubscribelistener];
 }
 
-
-- (void)updateMessage:(NSString *)data{
-	self.console.text = [NSString stringWithFormat:@"%@ \n%@", self.console.text, data];
-}
 
 - (void)enablePushOptions{
     self.subscribeTag1.enabled=true;

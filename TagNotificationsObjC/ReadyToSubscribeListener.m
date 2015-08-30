@@ -28,8 +28,8 @@
 
 -(void)OnReadyToSubscribe{
 	[vc enablePushOptions];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"onReadyToSubscribe"
-                                                    message:@"onReadyToSubscribe_success"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ready to subscribe"
+                                                    message: nil
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];

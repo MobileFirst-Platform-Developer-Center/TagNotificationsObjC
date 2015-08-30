@@ -17,11 +17,6 @@
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
 
-@interface MyUnsubscribeListener : NSObject <WLDelegate>{
-@private
-    ViewController *vc;
-}
-
-- (id)initWithController: (ViewController *)mainView;
+@interface MyUnsubscribeListener : NSObject <WLDelegate>
 
 @end

@@ -17,11 +17,5 @@
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
 
-@interface MyConnectionListener : NSObject <WLDelegate> {
-@private
-    ViewController *vc;
-}
-
-
-- (id)initWithController: (ViewController *)mainView;
+@interface MyConnectionListener : NSObject <WLDelegate> 
 @end

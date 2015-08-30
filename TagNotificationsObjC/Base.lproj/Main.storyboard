@@ -69,19 +69,6 @@
                                     <action selector="unsubscribetag1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RUR-DU-YXj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol2-4B-hBa">
-                                <rect key="frame" x="27" y="381" width="361" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Unsubscribe sample-tag2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                </variation>
-                                <connections>
-                                    <action selector="unsubscribetag2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fzQ-hr-Iy4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6u-MM-xEO">
                                 <rect key="frame" x="44" y="263" width="326" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -93,6 +80,19 @@
                                 </variation>
                                 <connections>
                                     <action selector="subscribetag2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ty9-PM-yyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol2-4B-hBa">
+                                <rect key="frame" x="27" y="381" width="361" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Unsubscribe sample-tag2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unsubscribetag2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fzQ-hr-Iy4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,6 +114,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tag Push Notifications" id="cMf-LC-dtt" userLabel="Tag Push Notifications"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="subscribeTag1" destination="mdZ-wN-stU" id="1WW-RR-ZvQ"/>
+                        <outlet property="subscribeTag2" destination="y6u-MM-xEO" id="Huy-Sj-Uzc"/>
+                        <outlet property="unsubscribeTag1" destination="Fg5-jS-wrO" id="NMf-Bt-IIm"/>
+                        <outlet property="unsubscribeTag2" destination="Ol2-4B-hBa" id="Qib-Tl-C4I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

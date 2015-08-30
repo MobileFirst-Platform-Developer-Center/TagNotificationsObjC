@@ -16,19 +16,19 @@
 #import "MyConnectListener.h"
 
 @implementation MyConnectionListener
-- (id)initWithController: (ViewController *) mainView{
-    if ( self = [super init] )
-    {
-        vc = mainView;
-    }
-    return self;
-}
+
 
 -(void)onSuccess:(WLResponse *)response{
-	
+    NSLog(@"\nConnected Successfully %@", response.responseText);
 }
 
 -(void)onFailure:(WLFailResponse *)response{
-   
+    NSLog(@"\nConnection Failure %@", response.errorMsg);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Failure"
+                                                    message: response.errorMsg
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 @end

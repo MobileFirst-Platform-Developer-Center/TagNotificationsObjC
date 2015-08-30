@@ -17,11 +17,6 @@
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
 
-@interface MySubscribeListener : NSObject <WLDelegate>{
-@private
-    ViewController *vc;
-}
-
-- (id)initWithController: (ViewController *)mainView;
+@interface MySubscribeListener : NSObject <WLDelegate>
 
 @end

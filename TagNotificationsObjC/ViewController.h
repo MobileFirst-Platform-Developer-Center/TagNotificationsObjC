@@ -18,17 +18,13 @@
 #import <IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation.h>
 
 
-@interface ViewController : UIViewController{
-    @public
-    UITextView* console;
-}
+@interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *subscribeTag1;
 @property (weak, nonatomic) IBOutlet UIButton *subscribeTag2;
 @property (weak, nonatomic) IBOutlet UIButton *unsubscribeTag1;
 @property (weak, nonatomic) IBOutlet UIButton *unsubscribeTag2;
 
-@property (weak, nonatomic) IBOutlet UITextView *console;
 @property (nonatomic, strong)NSString *alias;
 @property (nonatomic, strong)NSString *adapterName;
 @property (nonatomic, strong)NSString *eventSourceName;
@@ -36,6 +32,5 @@
 @property (nonatomic, strong)NSString *username;
 @property (nonatomic, strong)NSString *password;
 
-- (void)updateMessage:(NSString *)data;
 - (void)enablePushOptions;
 @end
